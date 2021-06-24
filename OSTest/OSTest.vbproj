@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8013D95E-7383-4CF0-B87F-2CFA7A584F6D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>REVENGEOS.My.MyApplication</StartupObject>
+    <RootNamespace>REVENGEOS</RootNamespace>
+    <AssemblyName>Revenge OS</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.1.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Revenge OS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Revenge OS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ManagedWifi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\managedwifi.1.1.0\lib\net20\ManagedWifi.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="DeskMenu.Designer.vb">
+      <DependentUpon>DeskMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeskMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FatalError.Designer.vb">
+      <DependentUpon>FatalError.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FatalError.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Files.Designer.vb">
+      <DependentUpon>Files.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Files.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoDisplay.Designer.vb">
+      <DependentUpon>InfoDisplay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InfoDisplay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Paint.Designer.vb">
+      <DependentUpon>Paint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Paint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartSplash.Designer.vb">
+      <DependentUpon>StartSplash.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Desktop.Designer.vb">
+      <DependentUpon>Desktop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Desktop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetHelp.Designer.vb">
+      <DependentUpon>GetHelp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GetHelp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Internet.Designer.vb">
+      <DependentUpon>Internet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Internet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuSettings.Designer.vb">
+      <DependentUpon>MenuSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NoInternet.Designer.vb">
+      <DependentUpon>NoInternet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NoInternet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notes.Designer.vb">
+      <DependentUpon>Notes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Notes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotesSettings.Designer.vb">
+      <DependentUpon>NotesSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NotesSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.vb">
+      <DependentUpon>Settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModalBox.Designer.vb">
+      <DependentUpon>ModalBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModalBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DeskMenu.resx">
+      <DependentUpon>DeskMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FatalError.resx">
+      <DependentUpon>FatalError.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Files.resx">
+      <DependentUpon>Files.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoDisplay.resx">
+      <DependentUpon>InfoDisplay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paint.resx">
+      <DependentUpon>Paint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartSplash.resx">
+      <DependentUpon>StartSplash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Desktop.resx">
+      <DependentUpon>Desktop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetHelp.resx">
+      <DependentUpon>GetHelp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Internet.resx">
+      <DependentUpon>Internet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuSettings.resx">
+      <DependentUpon>MenuSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoInternet.resx">
+      <DependentUpon>NoInternet.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notes.resx">
+      <DependentUpon>Notes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotesSettings.resx">
+      <DependentUpon>NotesSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModalBox.resx">
+      <DependentUpon>ModalBox.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\icons8-Attention-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Cancel-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Error-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-No Entry-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Battery Level-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Charged Battery-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Charging Battery-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Full Battery-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Low Battery-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Remove Battery-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\39199926.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
