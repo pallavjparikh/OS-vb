@@ -63,14 +63,14 @@ Partial Class Desktop
         Me.DeskBar.Location = New System.Drawing.Point(-2, -2)
         Me.DeskBar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.DeskBar.Name = "DeskBar"
-        Me.DeskBar.Size = New System.Drawing.Size(99, 881)
+        Me.DeskBar.Size = New System.Drawing.Size(99, 1334)
         Me.DeskBar.TabIndex = 0
         '
         'PictureBox3
         '
         Me.PictureBox3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(50, 812)
+        Me.PictureBox3.Location = New System.Drawing.Point(50, 1265)
         Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(45, 47)
@@ -82,7 +82,7 @@ Partial Class Desktop
         '
         Me.PictureBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(2, 812)
+        Me.PictureBox2.Location = New System.Drawing.Point(2, 1265)
         Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(45, 47)
@@ -113,7 +113,7 @@ Partial Class Desktop
         Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Panel1.Controls.Add(Me.GSearchBar)
-        Me.Panel1.Location = New System.Drawing.Point(322, 377)
+        Me.Panel1.Location = New System.Drawing.Point(773, 377)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(716, 119)
@@ -136,7 +136,7 @@ Partial Class Desktop
         Me.DeskTime.BackColor = System.Drawing.Color.Transparent
         Me.DeskTime.Font = New System.Drawing.Font("Segoe UI Light", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DeskTime.ForeColor = System.Drawing.Color.White
-        Me.DeskTime.Location = New System.Drawing.Point(346, 117)
+        Me.DeskTime.Location = New System.Drawing.Point(797, 117)
         Me.DeskTime.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.DeskTime.Name = "DeskTime"
         Me.DeskTime.Size = New System.Drawing.Size(666, 167)
@@ -150,7 +150,7 @@ Partial Class Desktop
         Me.DeskDate.BackColor = System.Drawing.Color.Transparent
         Me.DeskDate.Font = New System.Drawing.Font("Segoe UI Light", 12.0!)
         Me.DeskDate.ForeColor = System.Drawing.Color.White
-        Me.DeskDate.Location = New System.Drawing.Point(342, 284)
+        Me.DeskDate.Location = New System.Drawing.Point(793, 284)
         Me.DeskDate.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.DeskDate.Name = "DeskDate"
         Me.DeskDate.Size = New System.Drawing.Size(666, 45)
@@ -168,17 +168,17 @@ Partial Class Desktop
         Me.Panel2.Controls.Add(Me.PaintIcon)
         Me.Panel2.Controls.Add(Me.NotesIcon)
         Me.Panel2.Controls.Add(Me.FilesIcon)
-        Me.Panel2.Location = New System.Drawing.Point(238, 539)
+        Me.Panel2.Location = New System.Drawing.Point(238, 992)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(882, 262)
+        Me.Panel2.Size = New System.Drawing.Size(1784, 262)
         Me.Panel2.TabIndex = 7
         '
         'BrowserIcon
         '
         Me.BrowserIcon.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.BrowserIcon.Image = CType(resources.GetObject("BrowserIcon.Image"), System.Drawing.Image)
-        Me.BrowserIcon.Location = New System.Drawing.Point(681, 12)
+        Me.BrowserIcon.Location = New System.Drawing.Point(1132, 12)
         Me.BrowserIcon.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BrowserIcon.Name = "BrowserIcon"
         Me.BrowserIcon.Size = New System.Drawing.Size(108, 112)
@@ -190,7 +190,7 @@ Partial Class Desktop
         '
         Me.SettingsIcon.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.SettingsIcon.Image = CType(resources.GetObject("SettingsIcon.Image"), System.Drawing.Image)
-        Me.SettingsIcon.Location = New System.Drawing.Point(93, 12)
+        Me.SettingsIcon.Location = New System.Drawing.Point(544, 12)
         Me.SettingsIcon.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.SettingsIcon.Name = "SettingsIcon"
         Me.SettingsIcon.Size = New System.Drawing.Size(108, 112)
@@ -202,7 +202,7 @@ Partial Class Desktop
         '
         Me.PaintIcon.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.PaintIcon.Image = CType(resources.GetObject("PaintIcon.Image"), System.Drawing.Image)
-        Me.PaintIcon.Location = New System.Drawing.Point(240, 12)
+        Me.PaintIcon.Location = New System.Drawing.Point(691, 12)
         Me.PaintIcon.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.PaintIcon.Name = "PaintIcon"
         Me.PaintIcon.Size = New System.Drawing.Size(108, 112)
@@ -214,7 +214,7 @@ Partial Class Desktop
         '
         Me.NotesIcon.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.NotesIcon.Image = CType(resources.GetObject("NotesIcon.Image"), System.Drawing.Image)
-        Me.NotesIcon.Location = New System.Drawing.Point(534, 12)
+        Me.NotesIcon.Location = New System.Drawing.Point(985, 12)
         Me.NotesIcon.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.NotesIcon.Name = "NotesIcon"
         Me.NotesIcon.Size = New System.Drawing.Size(108, 112)
@@ -226,7 +226,7 @@ Partial Class Desktop
         '
         Me.FilesIcon.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.FilesIcon.Image = CType(resources.GetObject("FilesIcon.Image"), System.Drawing.Image)
-        Me.FilesIcon.Location = New System.Drawing.Point(387, 12)
+        Me.FilesIcon.Location = New System.Drawing.Point(838, 12)
         Me.FilesIcon.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.FilesIcon.Name = "FilesIcon"
         Me.FilesIcon.Size = New System.Drawing.Size(108, 112)
@@ -241,7 +241,7 @@ Partial Class Desktop
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(114, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(218, Byte), Integer))
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1262, 870)
+        Me.ClientSize = New System.Drawing.Size(2164, 1323)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.DeskDate)
         Me.Controls.Add(Me.DeskTime)

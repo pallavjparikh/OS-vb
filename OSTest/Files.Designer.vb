@@ -56,7 +56,7 @@ Partial Class Files
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Location = New System.Drawing.Point(-2, -2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(772, 110)
+        Me.Panel1.Size = New System.Drawing.Size(2083, 110)
         Me.Panel1.TabIndex = 1
         '
         'TextBox1
@@ -65,7 +65,7 @@ Partial Class Files
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox1.Location = New System.Drawing.Point(15, 73)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(470, 46)
+        Me.TextBox1.Size = New System.Drawing.Size(1781, 46)
         Me.TextBox1.TabIndex = 4
         '
         'Label2
@@ -74,7 +74,7 @@ Partial Class Files
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 11.2!)
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(523, 73)
+        Me.Label2.Location = New System.Drawing.Point(1834, 73)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(233, 28)
         Me.Label2.TabIndex = 3
@@ -91,7 +91,7 @@ Partial Class Files
         Me.DirPath.ForeColor = System.Drawing.Color.White
         Me.DirPath.Location = New System.Drawing.Point(14, 73)
         Me.DirPath.Name = "DirPath"
-        Me.DirPath.Size = New System.Drawing.Size(503, 28)
+        Me.DirPath.Size = New System.Drawing.Size(1814, 28)
         Me.DirPath.TabIndex = 2
         Me.DirPath.Text = "Loading..." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.DirPath.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -114,7 +114,7 @@ Partial Class Files
         Me.PictureBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(706, 11)
+        Me.PictureBox1.Location = New System.Drawing.Point(2017, 11)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(50, 50)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -134,7 +134,7 @@ Partial Class Files
         Me.Panel2.Controls.Add(Me.Label3)
         Me.Panel2.Location = New System.Drawing.Point(-2, 102)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(200, 348)
+        Me.Panel2.Size = New System.Drawing.Size(200, 1155)
         Me.Panel2.TabIndex = 2
         '
         'PictureBox4
@@ -207,7 +207,7 @@ Partial Class Files
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(16.0!, 40.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(762, 445)
+        Me.ClientSize = New System.Drawing.Size(2073, 1252)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel2)
         Me.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))

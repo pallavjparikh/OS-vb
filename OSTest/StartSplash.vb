@@ -1,5 +1,5 @@
 ﻿Imports System.Net
-Imports newtonsoft.json
+Imports Newtonsoft.Json
 
 Public Class StartSplash
     Private Function SpamRefresh(times As Integer)
@@ -10,7 +10,7 @@ Public Class StartSplash
     End Function
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Cursor.Hide()
-        Timer1.Interval = 7000
+        Timer1.Interval = 4500
         Timer1.Enabled = True
     End Sub
 
@@ -24,6 +24,10 @@ Public Class StartSplash
     End Sub
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
     End Sub
 End Class
