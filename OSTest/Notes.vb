@@ -28,9 +28,7 @@ Public Class Notes
 
     End Sub
     Private Sub KeyDownEvent1_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
-        If e.KeyCode = Keys.S Then
-            Internet.Show()
-        End If
+
         If e.KeyCode = Keys.F13 Then
             Me.Close()
         End If

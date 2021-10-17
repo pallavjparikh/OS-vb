@@ -40,9 +40,7 @@ Public Class Desktop
 
     End Sub
     Private Sub KeyDownEvent1_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
-        If e.KeyCode = Keys.S Then
-            Internet.Show()
-        End If
+
         If e.KeyCode = Keys.F13 Then
             Me.Close()
         End If
@@ -174,5 +172,19 @@ Public Class Desktop
     Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
 
+    End Sub
+    Private Sub Panel1_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
+        GSearchBar.Enabled = True
+    End Sub
+    Private Sub GSearchBar_Click(sender As Object, e As EventArgs) Handles GSearchBar.TextChanged
+        GSearchBar.Enabled = True
+    End Sub
+
+    Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
+        GSearchBar.Enabled = True
+    End Sub
+
+    Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click
+        GSearchBar.Enabled = False
     End Sub
 End Class

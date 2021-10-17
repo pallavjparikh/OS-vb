@@ -41,6 +41,8 @@ Partial Class Desktop
         Me.PaintIcon = New System.Windows.Forms.PictureBox()
         Me.NotesIcon = New System.Windows.Forms.PictureBox()
         Me.FilesIcon = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.DeskBar.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -54,6 +56,8 @@ Partial Class Desktop
         CType(Me.PaintIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NotesIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.FilesIcon, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DeskBar
@@ -117,10 +121,10 @@ Partial Class Desktop
         Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Panel1.Controls.Add(Me.GSearchBar)
-        Me.Panel1.Location = New System.Drawing.Point(773, 377)
+        Me.Panel1.Location = New System.Drawing.Point(630, 384)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(716, 119)
+        Me.Panel1.Size = New System.Drawing.Size(1063, 112)
         Me.Panel1.TabIndex = 3
         '
         'GSearchBar
@@ -129,17 +133,17 @@ Partial Class Desktop
         Me.GSearchBar.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.GSearchBar.Enabled = False
         Me.GSearchBar.Font = New System.Drawing.Font("Segoe UI Semilight", 9.5!)
-        Me.GSearchBar.Location = New System.Drawing.Point(78, 42)
+        Me.GSearchBar.Location = New System.Drawing.Point(122, 39)
         Me.GSearchBar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.GSearchBar.Name = "GSearchBar"
-        Me.GSearchBar.Size = New System.Drawing.Size(608, 34)
+        Me.GSearchBar.Size = New System.Drawing.Size(911, 34)
         Me.GSearchBar.TabIndex = 0
         '
         'DeskTime
         '
         Me.DeskTime.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.DeskTime.BackColor = System.Drawing.Color.Transparent
-        Me.DeskTime.Font = New System.Drawing.Font("Segoe UI Light", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DeskTime.Font = New System.Drawing.Font("Calibri", 60.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DeskTime.ForeColor = System.Drawing.Color.White
         Me.DeskTime.Location = New System.Drawing.Point(797, 117)
         Me.DeskTime.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
@@ -153,12 +157,12 @@ Partial Class Desktop
         '
         Me.DeskDate.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.DeskDate.BackColor = System.Drawing.Color.Transparent
-        Me.DeskDate.Font = New System.Drawing.Font("Segoe UI Light", 12.0!)
+        Me.DeskDate.Font = New System.Drawing.Font("Calibri", 19.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DeskDate.ForeColor = System.Drawing.Color.White
         Me.DeskDate.Location = New System.Drawing.Point(793, 284)
         Me.DeskDate.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.DeskDate.Name = "DeskDate"
-        Me.DeskDate.Size = New System.Drawing.Size(666, 45)
+        Me.DeskDate.Size = New System.Drawing.Size(696, 62)
         Me.DeskDate.TabIndex = 6
         Me.DeskDate.Text = "January 1, 1969"
         Me.DeskDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -265,6 +269,32 @@ Partial Class Desktop
         Me.FilesIcon.TabIndex = 0
         Me.FilesIcon.TabStop = False
         '
+        'PictureBox6
+        '
+        Me.PictureBox6.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
+        Me.PictureBox6.Location = New System.Drawing.Point(538, 384)
+        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(93, 112)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox6.TabIndex = 7
+        Me.PictureBox6.TabStop = False
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.PictureBox7.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
+        Me.PictureBox7.Location = New System.Drawing.Point(1701, 389)
+        Me.PictureBox7.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(88, 107)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox7.TabIndex = 8
+        Me.PictureBox7.TabStop = False
+        '
         'Desktop
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
@@ -273,6 +303,8 @@ Partial Class Desktop
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(2164, 1323)
+        Me.Controls.Add(Me.PictureBox6)
+        Me.Controls.Add(Me.PictureBox7)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.DeskDate)
         Me.Controls.Add(Me.DeskTime)
@@ -280,6 +312,7 @@ Partial Class Desktop
         Me.Controls.Add(Me.DeskBar)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "Desktop"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
@@ -297,6 +330,8 @@ Partial Class Desktop
         CType(Me.PaintIcon, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NotesIcon, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.FilesIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -318,4 +353,6 @@ Partial Class Desktop
     Friend WithEvents NotesIcon As PictureBox
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents PictureBox7 As PictureBox
 End Class
