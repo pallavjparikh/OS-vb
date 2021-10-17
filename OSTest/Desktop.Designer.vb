@@ -196,7 +196,7 @@ Partial Class Desktop
         'PictureBox4
         '
         Me.PictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.PictureBox4.Image = Global.REVENGEOS.My.Resources.Resources.help
+        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
         Me.PictureBox4.Location = New System.Drawing.Point(1260, 12)
         Me.PictureBox4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.PictureBox4.Name = "PictureBox4"
