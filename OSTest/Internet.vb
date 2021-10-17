@@ -13,6 +13,36 @@
 
     End Sub
 
+    Private Sub KeyDownEvent1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+    Private Sub KeyDownEvent1_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+        If e.KeyCode = Keys.S Then
+            Me.Close()
+        End If
+        If e.KeyCode = Keys.F13 Then
+            Me.Close()
+        End If
+        If e.KeyCode = Keys.F15 Then
+            LoginForm.Show()
+        End If
+        If e.KeyCode = Keys.F16 Then
+            Notes.Show()
+        End If
+        If e.KeyCode = Keys.F17 Then
+            Files.Show()
+        End If
+        If e.KeyCode = Keys.F18 Then
+            My.Forms.Paint.Show()
+        End If
+        If e.KeyCode = Keys.F19 Then
+            Settings.Show()
+        End If
+        If e.KeyCode = Keys.F20 Then
+            Me.Close()
+        End If
+
+    End Sub
     Private Sub WebBrowser1_Navigating(sender As Object, e As WebBrowserNavigatingEventArgs) Handles WebBrowser1.Navigating
         Label2.Text = "Loading"
     End Sub

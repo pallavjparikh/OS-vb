@@ -34,6 +34,8 @@ Partial Class Desktop
         Me.DeskTime = New System.Windows.Forms.Label()
         Me.DeskDate = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.BrowserIcon = New System.Windows.Forms.PictureBox()
         Me.SettingsIcon = New System.Windows.Forms.PictureBox()
         Me.PaintIcon = New System.Windows.Forms.PictureBox()
@@ -45,6 +47,8 @@ Partial Class Desktop
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BrowserIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SettingsIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PaintIcon, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -123,6 +127,7 @@ Partial Class Desktop
         '
         Me.GSearchBar.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GSearchBar.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.GSearchBar.Enabled = False
         Me.GSearchBar.Font = New System.Drawing.Font("Segoe UI Semilight", 9.5!)
         Me.GSearchBar.Location = New System.Drawing.Point(78, 42)
         Me.GSearchBar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
@@ -163,6 +168,8 @@ Partial Class Desktop
         Me.Panel2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel2.BackColor = System.Drawing.Color.Transparent
+        Me.Panel2.Controls.Add(Me.PictureBox5)
+        Me.Panel2.Controls.Add(Me.PictureBox4)
         Me.Panel2.Controls.Add(Me.BrowserIcon)
         Me.Panel2.Controls.Add(Me.SettingsIcon)
         Me.Panel2.Controls.Add(Me.PaintIcon)
@@ -173,6 +180,30 @@ Partial Class Desktop
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1784, 262)
         Me.Panel2.TabIndex = 7
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
+        Me.PictureBox5.Location = New System.Drawing.Point(1394, 12)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(108, 112)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox5.TabIndex = 6
+        Me.PictureBox5.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.PictureBox4.Image = Global.REVENGEOS.My.Resources.Resources.help
+        Me.PictureBox4.Location = New System.Drawing.Point(1260, 12)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(108, 112)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox4.TabIndex = 5
+        Me.PictureBox4.TabStop = False
         '
         'BrowserIcon
         '
@@ -259,6 +290,8 @@ Partial Class Desktop
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BrowserIcon, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SettingsIcon, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PaintIcon, System.ComponentModel.ISupportInitialize).EndInit()
@@ -283,4 +316,6 @@ Partial Class Desktop
     Friend WithEvents SettingsIcon As PictureBox
     Friend WithEvents PaintIcon As PictureBox
     Friend WithEvents NotesIcon As PictureBox
+    Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents PictureBox5 As PictureBox
 End Class

@@ -43,18 +43,20 @@ Partial Class Paint
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.ForeColor = System.Drawing.Color.White
-        Me.Panel1.Location = New System.Drawing.Point(-2, -2)
+        Me.Panel1.Location = New System.Drawing.Point(-3, -3)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(954, 77)
+        Me.Panel1.Size = New System.Drawing.Size(1431, 120)
         Me.Panel1.TabIndex = 0
         '
         'Label4
         '
         Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Label4.Location = New System.Drawing.Point(61, 44)
+        Me.Label4.Location = New System.Drawing.Point(92, 69)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(114, 30)
+        Me.Label4.Size = New System.Drawing.Size(171, 47)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Choose Color"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -63,9 +65,10 @@ Partial Class Paint
         '
         Me.Label3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Label3.Location = New System.Drawing.Point(4, 44)
+        Me.Label3.Location = New System.Drawing.Point(6, 69)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(51, 30)
+        Me.Label3.Size = New System.Drawing.Size(76, 47)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Clear"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -73,9 +76,10 @@ Partial Class Paint
         'Label2
         '
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.Label2.Location = New System.Drawing.Point(3, 3)
+        Me.Label2.Location = New System.Drawing.Point(4, 5)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(126, 47)
+        Me.Label2.Size = New System.Drawing.Size(189, 73)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Paint"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -84,9 +88,10 @@ Partial Class Paint
         '
         Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(912, 4)
+        Me.Label1.Location = New System.Drawing.Point(1368, 6)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 47)
+        Me.Label1.Size = New System.Drawing.Size(58, 73)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "×"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -98,9 +103,10 @@ Partial Class Paint
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox1.BackColor = System.Drawing.Color.White
         Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Cross
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 81)
+        Me.PictureBox1.Location = New System.Drawing.Point(18, 127)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(927, 550)
+        Me.PictureBox1.Size = New System.Drawing.Size(1390, 859)
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
@@ -111,12 +117,13 @@ Partial Class Paint
         '
         'Paint
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(951, 643)
+        Me.ClientSize = New System.Drawing.Size(1426, 1005)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "Paint"
         Me.Text = "Paint"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

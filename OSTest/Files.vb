@@ -37,6 +37,37 @@ Public Class Files
         Return 0
     End Function
 
+    Private Sub KeyDownEvent1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+    Private Sub KeyDownEvent1_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+        If e.KeyCode = Keys.S Then
+            Internet.Show()
+        End If
+        If e.KeyCode = Keys.F13 Then
+            Me.Close()
+        End If
+        If e.KeyCode = Keys.F15 Then
+            LoginForm.Show()
+        End If
+        If e.KeyCode = Keys.F16 Then
+            Notes.Show()
+        End If
+        If e.KeyCode = Keys.F17 Then
+            Me.Close()
+        End If
+        If e.KeyCode = Keys.F18 Then
+            My.Forms.Paint.Show()
+        End If
+        If e.KeyCode = Keys.F19 Then
+            Settings.Show()
+        End If
+        If e.KeyCode = Keys.F20 Then
+            Internet.Show()
+        End If
+
+    End Sub
+
     Private Sub UnauthFiles_Click(sender As Object, e As EventArgs) Handles SysFilesLabel.Click, FolderIcon3.Click
         RetrieveFilesIn(My.Computer.FileSystem.SpecialDirectories.ProgramFiles)
     End Sub
@@ -85,5 +116,9 @@ Public Class Files
 
     Private Sub Me_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
         Desktop.ProcessKeys(e)
+    End Sub
+
+    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
+
     End Sub
 End Class

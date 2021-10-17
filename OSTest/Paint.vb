@@ -6,6 +6,36 @@
     Dim myBrushWidth As Integer
     Dim smootherLocation As New Point(0, 0)
     Dim draw As Boolean = False
+    Private Sub KeyDownEvent1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+    Private Sub KeyDownEvent1_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+        If e.KeyCode = Keys.S Then
+            Internet.Show()
+        End If
+        If e.KeyCode = Keys.F13 Then
+            Me.Close()
+        End If
+        If e.KeyCode = Keys.F15 Then
+            LoginForm.Show()
+        End If
+        If e.KeyCode = Keys.F16 Then
+            Notes.Show()
+        End If
+        If e.KeyCode = Keys.F17 Then
+            Files.Show()
+        End If
+        If e.KeyCode = Keys.F18 Then
+            Me.Close()
+        End If
+        If e.KeyCode = Keys.F19 Then
+            Settings.Show()
+        End If
+        If e.KeyCode = Keys.F20 Then
+            Internet.Show()
+        End If
+
+    End Sub
 
 
     Private Sub PictureBox1_MouseDown(sender As Object, e As MouseEventArgs) Handles PictureBox1.MouseDown
@@ -28,6 +58,14 @@
     Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
         ColorDialog1.ShowDialog()
         myPen.Color = ColorDialog1.Color
+    End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+
     End Sub
 
     Private Sub PictureBox1_MouseMove(sender As Object, e As MouseEventArgs) Handles PictureBox1.MouseMove

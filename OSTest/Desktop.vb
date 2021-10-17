@@ -1,7 +1,9 @@
 ﻿Imports System.IO
 Imports System.Net
+Imports DotLiquid
 
 Public Class Desktop
+
     Private Function SpamRefresh(times As Integer)
         For tmp = 0 To times
             Me.Refresh()
@@ -20,9 +22,50 @@ Public Class Desktop
             FatalError.Show()
         ElseIf e.KeyCode = Keys.S And My.Computer.Keyboard.AltKeyDown Then
             DeskMenu.Show()
+
+        ElseIf e.KeyCode = Keys.E Then
+            Settings.Show()
         End If
+
+        If e.KeyCode = Keys.F1 Then
+            Settings.Show()
+        End If
+
+
+
         Return 0
     End Function
+
+    Private Sub KeyDownEvent1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+    Private Sub KeyDownEvent1_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+        If e.KeyCode = Keys.S Then
+            Internet.Show()
+        End If
+        If e.KeyCode = Keys.F13 Then
+            Me.Close()
+        End If
+        If e.KeyCode = Keys.F15 Then
+            LoginForm.Show()
+        End If
+        If e.KeyCode = Keys.F16 Then
+            Notes.Show()
+        End If
+        If e.KeyCode = Keys.F17 Then
+            Files.Show()
+        End If
+        If e.KeyCode = Keys.F18 Then
+            My.Forms.Paint.Show()
+        End If
+        If e.KeyCode = Keys.F19 Then
+            Settings.Show()
+        End If
+        If e.KeyCode = Keys.F20 Then
+            Internet.Show()
+        End If
+
+    End Sub
     Private Sub Desktop_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DeskTime.Text = Date.Now.ToString("HH:mm")
         DeskDate.Text = MonthName(Month(DateTime.Now)) & Date.Now.ToString(" dd, yyyy")
@@ -70,7 +113,7 @@ Public Class Desktop
     End Sub
 
     Private Sub Me_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
-        ProcessKeys(e)
+
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -112,6 +155,24 @@ Public Class Desktop
     End Sub
 
     Private Sub DeskDate_Click(sender As Object, e As EventArgs) Handles DeskDate.Click
+
+    End Sub
+
+    Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
+        GetHelp.Show()
+    End Sub
+
+    Private Sub PictureBox5_Click_1(sender As Object, e As EventArgs) Handles PictureBox5.Click
+        Process.Start("C:\Program Files\Google\Chrome\Application\Chrome.exe")
+
+    End Sub
+
+    Private Sub GSearchBar_TextChanged(sender As Object, e As EventArgs) Handles GSearchBar.TextChanged
+
+    End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
 
     End Sub
 End Class
