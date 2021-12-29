@@ -14,5 +14,11 @@
     <Setting Name="UseNotesDarkTheme" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
+    <Setting Name="BackGroundImage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\OS-vb\OSTest\Resources\39199926.png</Value>
+    </Setting>
+    <Setting Name="DefaultPatf_Image" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
