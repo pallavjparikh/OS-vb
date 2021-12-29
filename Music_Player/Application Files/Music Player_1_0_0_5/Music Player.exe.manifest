@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Music Player.exe" version="1.0.0.5" publicKeyToken="7e73dc8a41b4fb0f" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Music Player" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Music Player.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.WMPLib.dll" size="53760">
+      <assemblyIdentity name="AxInterop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>FWrIXWXrlIGu6RWus4RGF7h0ixN2CQsiOtZ++tc43t4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.WMPLib.dll" size="330752">
+      <assemblyIdentity name="Interop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>kyKvuFrxU1hWLOn/mcu+82I/+Fa41L+M8cKADh7O8oM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Music Player.exe" size="49088">
+      <assemblyIdentity name="Music Player" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>9f8mAWrlxrZS0UWZ8I+uffpBrZU1XRciUZJuocXpvds=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Music Player.exe.config" size="587">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+UxCvtgGrH0UCEDtjoUpak+yAnRdFic0pgqjyGEidvM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Music_Default_Path.mdf" size="8388608" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Sqo02jrB3+YAdv9GF8EYm7/D48zyLjHd2iLyzLH8cLk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Music_Default_Path_log.ldf" size="8388608" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8/uXs+LWPrGeTCkGUvY3OcAiApIyATFRCyKXTpGS0BM=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=ACERNITRO\Ni$arg" issuerKeyHash="77342e8376d7b09a272b0d95f6871d84e58c8aa5" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>5LnfXPnosUbf7I5lkozYiDSEDJUrpELALyGPN1p9ENc=</DigestValue></Reference></SignedInfo><SignatureValue>l0VeosQL6Ac36GyVFis/qG9Eou/864g894t7UMPJpP2bYEMPc9IPCFpe+ebAXO3PiiESDHaXduUzJxSUB46wZmJN6PkbsDAC5+ycIBDWOOWFvmrk+9kapsv4qsbkebQlZhq/wFZa5V9YV62krl9HcBel60mJhZtmkOsFaU3+3bU=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>soKwNiNss6ByNQ/iCX7sTdFWiZbWS+T2cWfHnLL+vMM88Bt06TYFVIsR4tOYGIn+RUS9qREqmjcEPizHBS05vPzxZpMRZhisXHORzORqW6QvgNYTO7jp2vzRJSt9hrQM7/77ZTcwJvpWMpc/IRxW8kKeIIHFEIeb/kGqmRomlvU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="d7107d5a378f212fc042a42b950c843488d88c92658eecdf46b1e8f95cdfb9e4" Description="" Url=""><as:assemblyIdentity name="Music Player.exe" version="1.0.0.5" publicKeyToken="7e73dc8a41b4fb0f" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=ACERNITRO\Ni$arg</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>likSbH00+ftSIP8iX5IQJF9Nu+jDzH9IY7sYzETxbHQ=</DigestValue></Reference></SignedInfo><SignatureValue>QFPX93utYHxRlDZ1lpjfGkIIzB6Er1s02R4U/JmqtrdtEpkOTdW/CHj1+kep84+5Zn90BZ3Q8LkwMC2BLR1v7vesWSSObI66iBQ/GLThcl0mgBVDODtNmr8JwseRcVP3MDQcf3KL1Hx1+cXaeJBpunTqF6+ZkaeHlNWNgFUvskQ=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>soKwNiNss6ByNQ/iCX7sTdFWiZbWS+T2cWfHnLL+vMM88Bt06TYFVIsR4tOYGIn+RUS9qREqmjcEPizHBS05vPzxZpMRZhisXHORzORqW6QvgNYTO7jp2vzRJSt9hrQM7/77ZTcwJvpWMpc/IRxW8kKeIIHFEIeb/kGqmRomlvU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQOfK/fEX2RYBDkIBlyTWIRzANBgkqhkiG9w0BAQsFADArMSkwJwYDVQQDHiAAQQBDAEUAUgBOAEkAVABSAE8AXABOAGkAJABhAHIAZzAeFw0yMTEwMTUxMDEzMDRaFw0yMjEwMTUxNjEzMDRaMCsxKTAnBgNVBAMeIABBAEMARQBSAE4ASQBUAFIATwBcAE4AaQAkAGEAcgBnMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCygrA2I2yzoHI1D+IJfuxN0VaJltZL5PZxZ8ecsv68wzzwG3TpNgVUixHi05gYif5FRL2pESqaNwQ+LMcFLTm8/PFmkxFmGKxcc5HM5GpbpC+A1hM7uOna/NElK32GtAzv/vtlNzAm+lYylz8hHFbyQp4ggcUQh5v+QaqZGiaW9QIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAA70Kjy9SIvAqEEPmKGEUs11rGZSWMzHkha7s6E8lnH7xfgrwVBSgo1iNIi4bAVoLwSQ5B0+R09LZt84RWR+msWh+BPwz0EM3sG8bjaBdl+iilUOBbA9VaeasryogAPe7v2aEsLNpXB1WdOXN5BlgOp6fPhDMF3hBCWPGZmRGNcV</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
