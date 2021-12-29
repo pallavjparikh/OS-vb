@@ -36,8 +36,10 @@ Public Class Desktop
         Return 0
     End Function
 
+    Private Sub KeyDownEvent1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-    Private Sub KeyDownEvent1_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
+    End Sub
+    Private Sub KeyDownEvent1_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
 
         If e.KeyCode = Keys.F13 Then
             Me.Close()
@@ -62,8 +64,18 @@ Public Class Desktop
         End If
 
     End Sub
-    Private Sub Desktop_Load(sender As Object, e As EventArgs)
-
+    Private Sub Desktop_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        DeskTime.Text = Date.Now.ToString("HH:mm")
+        DeskDate.Text = MonthName(Month(DateTime.Now)) & Date.Now.ToString(" dd, yyyy")
+        Timer1.Interval = 100
+        Timer1.Enabled = True
+        Try
+            Dim Client As WebClient = New WebClient()
+            Dim Reader As StreamReader = New StreamReader(Client.OpenRead("https://httpbin.org/get"))
+        Catch ex As Exception
+            NoInternet.Show()
+            NoInternet.MoreInfo.Text = ex.ToString
+        End Try
     End Sub
 
     Private Sub PictureBox5_Click(sender As Object, e As EventArgs)
@@ -174,13 +186,5 @@ Public Class Desktop
 
     Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click
         GSearchBar.Enabled = False
-    End Sub
-
-
-
-
-
-    Private Sub Desktop_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
-        Desktop.ActiveForm.BackgroundImage = Image.FromFile(My.Settings.BackGroundImage)
     End Sub
 End Class

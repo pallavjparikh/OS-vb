@@ -6,7 +6,9 @@
 
     End Sub
 
+    Private Sub KeyDownEvent1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    End Sub
     Private Sub KeyDownEvent1_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
         If e.KeyCode = Keys.S Then
             Internet.Show()
@@ -61,29 +63,13 @@
         Me.Close()
     End Sub
 
-    Private Sub Label3_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) 
+    Private Sub Label3_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Label3.KeyPress
         If e.KeyChar = Convert.ToChar(13) Then
             MsgBox("enter key pressd ")
         End If
     End Sub
 
-    Private Sub Label3_Click(sender As Object, e As EventArgs) 
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
 
-    End Sub
-
-    Private Sub WallpaperChange_Click(sender As Object, e As EventArgs) Handles WallpaperChange.Click
-        If OpenFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
-            OpenFileDialog1.InitialDirectory = My.Settings.DefaultPatf_Image
-            OpenFileDialog1.Title = "Select an image"
-            OpenFileDialog1.Filter = "image|*.jpg"
-            Settings.ActiveForm.BackgroundImage = Image.FromFile(OpenFileDialog1.FileName)
-            Desktop.BackgroundImage = Image.FromFile(OpenFileDialog1.FileName)
-            My.Settings.BackGroundImage = OpenFileDialog1.FileName
-            My.Settings.DefaultPatf_Image = OpenFileDialog1.InitialDirectory
-        End If
-    End Sub
-
-    Private Sub Settings_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Settings.ActiveForm.BackgroundImage = Image.FromFile(My.Settings.BackGroundImage)
     End Sub
 End Class

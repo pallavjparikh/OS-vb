@@ -101,30 +101,6 @@ Namespace My
                 Me("UseNotesDarkTheme") = value
             End Set
         End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("C:\OS-vb\OSTest\Resources\39199926.png")>  _
-        Public Property BackGroundImage() As String
-            Get
-                Return CType(Me("BackGroundImage"),String)
-            End Get
-            Set
-                Me("BackGroundImage") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("C:\")>  _
-        Public Property DefaultPatf_Image() As String
-            Get
-                Return CType(Me("DefaultPatf_Image"),String)
-            End Get
-            Set
-                Me("DefaultPatf_Image") = value
-            End Set
-        End Property
     End Class
 End Namespace
 
