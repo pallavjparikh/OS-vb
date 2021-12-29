@@ -176,11 +176,18 @@ Public Class Desktop
         GSearchBar.Enabled = False
     End Sub
 
-
-
-
-
     Private Sub Desktop_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
+        DeskTime.Text = Date.Now.ToString("HH:mm")
+        DeskDate.Text = MonthName(Month(DateTime.Now)) & Date.Now.ToString(" dd, yyyy")
+        Timer1.Interval = 100
+        Timer1.Enabled = True
+        Try
+            Dim Client As WebClient = New WebClient()
+            Dim Reader As StreamReader = New StreamReader(Client.OpenRead("https://httpbin.org/get"))
+        Catch ex As Exception
+            NoInternet.Show()
+            NoInternet.MoreInfo.Text = ex.ToString
+        End Try
         Desktop.ActiveForm.BackgroundImage = Image.FromFile(My.Settings.BackGroundImage)
     End Sub
 End Class
