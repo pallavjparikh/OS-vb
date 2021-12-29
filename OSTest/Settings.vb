@@ -1,4 +1,5 @@
 ﻿Public Class Settings
+    Public Wallpaper_Set As Boolean = False
     Private e As Object
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
@@ -63,13 +64,18 @@
         Me.Close()
     End Sub
 
-    Private Sub Label3_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Label3.KeyPress
+    Private Sub Label3_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs)
         If e.KeyChar = Convert.ToChar(13) Then
             MsgBox("enter key pressd ")
         End If
     End Sub
 
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
-
+    Private Sub changeWallpaper_Click(sender As Object, e As EventArgs) Handles changeWallpaper.Click
+        If OpenFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
+            OpenFileDialog1.Filter = "Image|*.jpg"
+            Desktop.BackgroundImage = Image.FromFile(OpenFileDialog1.FileName)
+            Wallpaper_Set = True
+            My.Settings.WallPaper_Path = OpenFileDialog1.FileName
+        End If
     End Sub
 End Class

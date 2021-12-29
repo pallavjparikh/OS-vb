@@ -26,13 +26,14 @@ Partial Class Settings
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.changeWallpaper = New System.Windows.Forms.Button()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.Test = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -77,28 +78,6 @@ Partial Class Settings
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
-        '
-        'Label2
-        '
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 14.0!)
-        Me.Label2.Location = New System.Drawing.Point(13, 77)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(741, 46)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "About"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label3
-        '
-        Me.Label3.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.Label3.Location = New System.Drawing.Point(13, 123)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(741, 273)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "//ADD HERE SOMETHING"
         '
         'PictureBox2
         '
@@ -158,15 +137,38 @@ Partial Class Settings
         Me.Label4.Text = "with"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'changeWallpaper
+        '
+        Me.changeWallpaper.Location = New System.Drawing.Point(12, 92)
+        Me.changeWallpaper.Name = "changeWallpaper"
+        Me.changeWallpaper.Size = New System.Drawing.Size(303, 38)
+        Me.changeWallpaper.TabIndex = 5
+        Me.changeWallpaper.Text = "Change Wallpaper"
+        Me.changeWallpaper.UseVisualStyleBackColor = True
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
+        'Test
+        '
+        Me.Test.AutoSize = True
+        Me.Test.BackColor = System.Drawing.Color.DarkGray
+        Me.Test.Location = New System.Drawing.Point(158, 213)
+        Me.Test.Name = "Test"
+        Me.Test.Size = New System.Drawing.Size(0, 28)
+        Me.Test.TabIndex = 6
+        Me.Test.Visible = False
+        '
         'Settings
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
-        Me.BackColor = System.Drawing.Color.White
+        Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(762, 445)
+        Me.Controls.Add(Me.Test)
+        Me.Controls.Add(Me.changeWallpaper)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -180,17 +182,19 @@ Partial Class Settings
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Panel2 As Panel
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Label4 As Label
+    Friend WithEvents changeWallpaper As Button
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents Test As Label
 End Class

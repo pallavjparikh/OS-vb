@@ -30,9 +30,9 @@ Public Class Desktop
         If e.KeyCode = Keys.F1 Then
             Settings.Show()
         End If
-
-
-
+        If Settings.Wallpaper_Set.Equals(True) Then
+            Desktop.ActiveForm.BackgroundImage = Image.FromFile(My.Settings.WallPaper_Path)
+        End If
         Return 0
     End Function
 
