@@ -75,6 +75,9 @@ Public Class Desktop
         Catch ex As Exception
             NoInternet.Show()
             NoInternet.MoreInfo.Text = ex.ToString
+            If My.Settings.WallPaper_Set.Equals(True) Then
+                Desktop.ActiveForm.BackgroundImage = Image.FromFile(My.Settings.WallPaper_Path)
+            End If
         End Try
     End Sub
 
