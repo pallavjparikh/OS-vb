@@ -30,9 +30,6 @@ Public Class Desktop
         If e.KeyCode = Keys.F1 Then
             Settings.Show()
         End If
-        If Settings.Wallpaper_Set.Equals(True) Then
-            Desktop.ActiveForm.BackgroundImage = Image.FromFile(My.Settings.WallPaper_Path)
-        End If
         Return 0
     End Function
 
@@ -65,6 +62,10 @@ Public Class Desktop
 
     End Sub
     Private Sub Desktop_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        If My.Settings.WallPaper_Set.Equals(True) Then
+            'Desktop.ActiveForm.BackgroundImage = Image.FromFile(My.Settings.WallPaper_Path)
+        End If
         DeskTime.Text = Date.Now.ToString("HH:mm")
         DeskDate.Text = MonthName(Month(DateTime.Now)) & Date.Now.ToString(" dd, yyyy")
         Timer1.Interval = 100
@@ -75,10 +76,8 @@ Public Class Desktop
         Catch ex As Exception
             NoInternet.Show()
             NoInternet.MoreInfo.Text = ex.ToString
-            If My.Settings.WallPaper_Set.Equals(True) Then
-                Desktop.ActiveForm.BackgroundImage = Image.FromFile(My.Settings.WallPaper_Path)
-            End If
         End Try
+
     End Sub
 
     Private Sub PictureBox5_Click(sender As Object, e As EventArgs)
@@ -189,5 +188,9 @@ Public Class Desktop
 
     Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click
         GSearchBar.Enabled = False
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        MusicPlayer.Show()
     End Sub
 End Class

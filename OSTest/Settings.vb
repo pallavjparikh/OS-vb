@@ -4,12 +4,8 @@
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         Me.Close()
-
     End Sub
 
-    Private Sub KeyDownEvent1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
     Private Sub KeyDownEvent1_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
         If e.KeyCode = Keys.S Then
             Internet.Show()
@@ -74,8 +70,9 @@
         If OpenFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
             OpenFileDialog1.Filter = "Image|*.jpg"
             Desktop.BackgroundImage = Image.FromFile(OpenFileDialog1.FileName)
-            My.Settings.WallPaper_Set = True
+            '  My.Settings.WallPaper_Set = True
             My.Settings.WallPaper_Path = OpenFileDialog1.FileName
         End If
     End Sub
+
 End Class

@@ -20,5 +20,11 @@
     <Setting Name="WallPaper_Set" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
+    <Setting Name="Music_Path_Set" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Music_Path" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\Public\Music</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

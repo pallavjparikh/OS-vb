@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Settings
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Settings
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Settings))
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -51,7 +51,7 @@ Partial Class Settings
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Location = New System.Drawing.Point(-2, -2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(772, 72)
+        Me.Panel1.Size = New System.Drawing.Size(777, 72)
         Me.Panel1.TabIndex = 0
         '
         'Label1
@@ -72,7 +72,7 @@ Partial Class Settings
         Me.PictureBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(706, 11)
+        Me.PictureBox1.Location = New System.Drawing.Point(711, 11)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(50, 50)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -84,7 +84,7 @@ Partial Class Settings
         Me.PictureBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.Image = Global.REVENGEOS.My.Resources.Resources._39199926
-        Me.PictureBox2.Location = New System.Drawing.Point(630, 123)
+        Me.PictureBox2.Location = New System.Drawing.Point(635, 123)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(120, 118)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -100,9 +100,9 @@ Partial Class Settings
         Me.Panel2.Controls.Add(Me.PictureBox3)
         Me.Panel2.Controls.Add(Me.Label4)
         Me.Panel2.ForeColor = System.Drawing.Color.White
-        Me.Panel2.Location = New System.Drawing.Point(-2, 399)
+        Me.Panel2.Location = New System.Drawing.Point(-2, 398)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(772, 57)
+        Me.Panel2.Size = New System.Drawing.Size(777, 57)
         Me.Panel2.TabIndex = 4
         '
         'PictureBox4
@@ -139,12 +139,13 @@ Partial Class Settings
         '
         'changeWallpaper
         '
+        Me.changeWallpaper.BackColor = System.Drawing.Color.Transparent
         Me.changeWallpaper.Location = New System.Drawing.Point(12, 92)
         Me.changeWallpaper.Name = "changeWallpaper"
         Me.changeWallpaper.Size = New System.Drawing.Size(303, 38)
         Me.changeWallpaper.TabIndex = 5
         Me.changeWallpaper.Text = "Change Wallpaper"
-        Me.changeWallpaper.UseVisualStyleBackColor = True
+        Me.changeWallpaper.UseVisualStyleBackColor = False
         '
         'OpenFileDialog1
         '
@@ -164,7 +165,7 @@ Partial Class Settings
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.Color.Black
-        Me.ClientSize = New System.Drawing.Size(762, 445)
+        Me.ClientSize = New System.Drawing.Size(767, 444)
         Me.Controls.Add(Me.Test)
         Me.Controls.Add(Me.changeWallpaper)
         Me.Controls.Add(Me.Panel2)
