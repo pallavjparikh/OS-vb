@@ -258,6 +258,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Desktop.resx">
       <DependentUpon>Desktop.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GetHelp.resx">
       <DependentUpon>GetHelp.vb</DependentUpon>
@@ -374,6 +375,26 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\2047794.png" />
+    <Content Include="Resources\4135947.png" />
+    <Content Include="Resources\banner.png" />
+    <Content Include="Resources\blur-bg.jpg" />
+    <Content Include="Resources\clipart1059505.png" />
+    <Content Include="Resources\clipart15401.png" />
+    <Content Include="Resources\download.png" />
+    <Content Include="Resources\favicon.ico" />
+    <Content Include="Resources\google-logo-computer-icons-mei-qi-5b190428349895.2431911415283661202155.png" />
+    <Content Include="Resources\Google_Chrome_icon_%28September_2014%29.svg.png" />
+    <Content Include="Resources\images.png" />
+    <Content Include="Resources\NicePng_note-png_712577.png" />
+    <Content Include="Resources\PngItem_653091.png" />
+    <Content Include="Resources\Settings-icon.png" />
+    <Content Include="Resources\Untitled.png" />
+    <Content Include="Resources\Untitled2.png" />
+    <Content Include="Resources\Untitled3.png" />
+    <Content Include="Resources\Windows_Settings_app_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

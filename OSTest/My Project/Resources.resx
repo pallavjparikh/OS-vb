@@ -53,7 +53,6 @@
     value   : The object must be serialized with 
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
-
     mimetype: application/x-microsoft.net.object.bytearray.base64
     value   : The object must be serialized into a byte array 
             : using a System.ComponentModel.TypeConverter
@@ -118,94 +117,40 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="access_denied" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-No Entry-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="clipart15401" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>D:\Documents\111os\clipart15401.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PngItem_653091" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>D:\Documents\111os\PngItem_653091.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="error_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-Error-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="warning_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-Attention-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="39199926" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\39199926.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="google-logo-computer-icons-mei-qi-5b190428349895.2431911415283661202155" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>D:\Documents\111os\google-logo-computer-icons-mei-qi-5b190428349895.2431911415283661202155.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Settings-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>D:\Documents\111os\Settings-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Untitled2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>D:\Documents\111os\Untitled2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="NicePng_note-png_712577" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>D:\Documents\111os\NicePng_note-png_712577.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="help" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BatteryCharging" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-Charging Battery-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Windows_Settings_app_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>D:\Documents\111os\Windows_Settings_app_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="blur-bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>D:\Documents\111os\blur-bg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Google_Chrome_icon_(September_2014).svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>D:\Documents\111os\Google_Chrome_icon_(September_2014).svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="clipart1059505" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>D:\Documents\111os\clipart1059505.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="BatteryHigh" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-Charged Battery-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BatteryFull" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-Full Battery-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Untitled" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>D:\Documents\111os\Untitled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Untitled3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>D:\Documents\111os\Untitled3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2047794" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>D:\Documents\111os\2047794.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>D:\Documents\111os\images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>D:\Documents\111os\download.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NoBattery" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-Remove Battery-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BatteryFull" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-Full Battery-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="access_denied" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-No Entry-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="BatteryMed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-Battery Level-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="error_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-Cancel-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="error_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-Error-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BatteryLow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-Low Battery-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="391999261" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>D:\Documents\111os\39199926.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BatteryCharging" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-Charging Battery-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="4135947" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>D:\Documents\111os\4135947.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="error_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-Cancel-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="transparent-essential-compilation-icon-music-icon-music-player-5dd9038fda30b9.6767775815745033118937" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\Downloads\transparent-essential-compilation-icon-music-icon-music-player-5dd9038fda30b9.6767775815745033118937.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="39199926" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\39199926.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
