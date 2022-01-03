@@ -230,6 +230,7 @@
   <ItemGroup>
     <EmbeddedResource Include="App_drawer.resx">
       <DependentUpon>App_drawer.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="DeskMenu.resx">
       <DependentUpon>DeskMenu.vb</DependentUpon>
