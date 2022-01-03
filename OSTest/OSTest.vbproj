@@ -119,6 +119,12 @@
     <Compile Include="Files.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="App_drawer.Designer.vb">
+      <DependentUpon>App_drawer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="App_drawer.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="InfoDisplay.Designer.vb">
       <DependentUpon>InfoDisplay.vb</DependentUpon>
     </Compile>
@@ -222,6 +228,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="App_drawer.resx">
+      <DependentUpon>App_drawer.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DeskMenu.resx">
       <DependentUpon>DeskMenu.vb</DependentUpon>
     </EmbeddedResource>

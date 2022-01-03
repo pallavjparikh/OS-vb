@@ -190,7 +190,11 @@ Public Class Desktop
         GSearchBar.Enabled = False
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        MusicPlayer.Show()
+    Private Sub PictureBox8_Click(sender As Object, e As EventArgs) Handles PictureBox8.Click
+        App_drawer.Show()
     End Sub
+
+    ' Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    '    MusicPlayer.Show()
+    ' End Sub
 End Class
