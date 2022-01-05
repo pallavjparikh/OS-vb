@@ -65,7 +65,7 @@ Partial Class Files
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox1.Location = New System.Drawing.Point(15, 73)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(1781, 46)
+        Me.TextBox1.Size = New System.Drawing.Size(1781, 31)
         Me.TextBox1.TabIndex = 4
         '
         'Label2
@@ -205,9 +205,9 @@ Partial Class Files
         '
         'Files
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(16.0!, 40.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(2073, 1252)
+        Me.ClientSize = New System.Drawing.Size(1924, 1055)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel2)
         Me.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))

@@ -282,7 +282,7 @@ Partial Class App_drawer
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox6.BackgroundImage = Global.REVENGEOS.My.Resources.Resources.NicePng_note_png_712577
+        ' Me.PictureBox6.BackgroundImage = Global.REVENGEOS.My.Resources.Resources.NicePng_note_png_712577
         Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
         Me.PictureBox6.Location = New System.Drawing.Point(0, 3)
         Me.PictureBox6.Name = "PictureBox6"

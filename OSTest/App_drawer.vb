@@ -107,7 +107,7 @@ Public Class App_drawer
     End Sub
 
     Private Sub Files_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click
-        Files.Show()
+        File_Explorer.Show()
         Me.Close()
     End Sub
 
