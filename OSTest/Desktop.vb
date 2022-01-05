@@ -92,6 +92,7 @@ Public Class Desktop
         If modalResult = 1 Then
             Try
                 DeskMenu.Close()
+                Application.Exit()
             Catch ex As Exception
                 Debug.Print(ex.ToString)
             End Try
